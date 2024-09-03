@@ -1,0 +1,72 @@
+.whyUsSection {
+  background-color: var(--primary-bg-color);
+  color: #e0e0e0; /* Jasnoszary tekst */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.whyUsTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Biały kolor tytułu */
+}
+
+.whyUsDescription {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whyUsFeatures {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  flex: 1;
+  margin: 0 10px;
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+.featureIcon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #ffffff; /* Biały kolor ikon */
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff; /* Biały kolor tytułów */
+}
+
+.featureDescription {
+  font-size: 1rem;
+  color: #e0e0e0; /* Jasnoszary tekst */
+}
+
+.ctaButton {
+  background-color: var(--highlight-color); /* Zielony przycisk CTA */
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ctaButton:hover {
+  background-color: #45a049; /* Delikatnie ciemniejszy zielony na hover */
+}
+
+@media (max-width: 765px) {
+  .whyUsFeatures {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

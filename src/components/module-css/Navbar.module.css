@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px var(--spacing);
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 1);
+  width: 100%;
+  top: 0;
+  background-color: var(--primary-bg-color);
+  z-index: 1000;
+  font-family: var(--font-family);
+  position: relative;
+}
+
+#main-menu {
+  z-index: 9999;
+}
+
+.logo {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--spacing);
+}
+
+.logo a,
+.navLinks a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-size: var(--font-size-large);
+  position: relative;
+  transition: color var(--transition-duration);
+}
+
+.navLinks a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--hover-text-color);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navLinks a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navLinks a:hover {
+  color: var(--hover-text-color);
+}
+
+.navLinks a.active {
+  color: var(--active-text-color);
+}
+
+.burger {
+  display: none;
+  font-size: var(--font-size-large);
+  cursor: pointer;
+  background-color: var(--burger-color);
+  color: var(--active-text-color);
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: color var(--transition-duration);
+}
+
+.burger:hover {
+  color: var(--hover-text-color);
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* To ensure it overlays the content */
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    padding: 10px 0;
+    z-index: 10000; /* Increase z-index to ensure it is on top */
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--primary-bg-color);
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  /* background-color: var(--scnd-bg-color); */
+  min-width: 60%;
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

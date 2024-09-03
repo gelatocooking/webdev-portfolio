@@ -1,0 +1,33 @@
+.footer {
+  background-color: var(--primary-bg-color);
+  color: #e0e0e0; /* Jasnoszary tekst */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footerMenu {
+  margin-bottom: 20px;
+}
+
+.footerLink {
+  color: #e0e0e0;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: #ffffff; /* Jaśniejszy kolor na hover */
+}
+
+.footerContact p {
+  margin: 5px 0;
+}
+
+.footerCopyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}

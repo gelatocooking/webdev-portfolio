@@ -1,0 +1,145 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+}
+.sectionsDiv {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 50%;
+}
+.contactImageDiv {
+  max-width: 50%;
+}
+.contactImage {
+  max-width: 100%;
+  /* padding: 10%; */
+}
+.header {
+  text-align: center;
+  background-color: var(--scnd-bg-color);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  /* background-image: var(--gradient-bg); */
+  background-color: var(--highlight-color);
+  color: #fff;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+
+.formSection {
+  /* width: 50%; */
+  margin-bottom: 40px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.input,
+.textarea {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  color: var(--primary-text-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #ffffff42;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 150px;
+  min-width: 300px;
+}
+
+.submitButton {
+  padding: 15px 30px;
+  background-color: var(--highlight-color);
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #388e3c;
+}
+
+.infoSection {
+  margin-bottom: 40px;
+  border: 1px solid var(--highlight-color);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.subheading {
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--highlight-color);
+}
+
+.contactInfo {
+  box-shadow: 10px, 10px, 30px, black;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.contactLink {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.availability {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: var(--primary-text-color);
+}
+
+.mapSection {
+  margin-top: 40px;
+}
+
+.mapContainer {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 765px) {
+  .contactForm,
+  .formSection,
+  .input,
+  .textarea,
+  .mapSection,
+  .mapContainer {
+    min-width: 80%;
+  }
+}
